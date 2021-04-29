@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "lazy-load"
+  "defaultProject": "lazy-load",
+  "cli": {
+    "analytics": "b09fca08-1a68-4526-8061-452d06246bc4"
+  }
 }

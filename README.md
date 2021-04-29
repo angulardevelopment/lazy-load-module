@@ -1,3 +1,9 @@
+# About
+Resolver usage
+
+Created new module using below command-
+ng g module employee
+
 # LazyLoad
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
