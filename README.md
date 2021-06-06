@@ -7,6 +7,8 @@ ng g module employee
 Todo-
 Add normal module usage
 
+To add guard-
+ng g guard my-new-guard
 # LazyLoad
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
