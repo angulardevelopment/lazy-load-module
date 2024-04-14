@@ -1,7 +1,7 @@
 import { LazyModule } from './lazy/lazy.module';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HelloComponent } from './hello/hello.component';
+import { PageNotFoundComponent } from './hello/hello.component';
 
 import { Resolver } from './resolver';
 
@@ -19,7 +19,7 @@ import { AlwaysAuthChildrenGuardService } from "./always-auth-children-guard.ser
 const routes: Routes = [
   {
     path: "backup",
-    component: HelloComponent
+    component: PageNotFoundComponent
   },
   {
     path: "",
@@ -49,9 +49,10 @@ const routes: Routes = [
       { path: "albums", component: ArtistalbumComponent }
     ]
   },
+  { path: 'movie', loadChildren: () => import('./movie/movie.module').then(m => m.MovieModule) },
   {
     path: "**",
-    component: HelloComponent
+    component: PageNotFoundComponent
   }
 ];
 
