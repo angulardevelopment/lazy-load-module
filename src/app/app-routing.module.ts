@@ -50,6 +50,10 @@ const routes: Routes = [
     ]
   },
   { path: 'movie', loadChildren: () => import('./movie/movie.module').then(m => m.MovieModule) },
+  // Below is the previous angular versions approach-
+
+// { path:'lazyload', loadChildren : './temperature/weather/weather.module#WeatherModule' },
+
   {
     path: "**",
     component: PageNotFoundComponent
@@ -62,3 +66,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
