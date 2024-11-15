@@ -28,3 +28,33 @@ export class TracklistComponent {
    }
 
 }
+
+
+app.module.ts
+import {HttpClientJsonpModule } from '@angular/common/http';
+
+imports: [
+HttpClientJsonpModule ,
+]
+
+app.component.ts
+import { HttpClient } from '@angular/common/http';
+
+constructor(private http: HttpClient) { }
+
+// Pass the key for your callback (in this case 'callback') as the second argument to the Jsonp method
+getjsonprequest(){
+let url2 = 'https://jobs.github.com/positions.json?description=python&location=new+york&callback=JSONP_CALLBACK';
+return this.http.jsonp(url2, 'callback');
+}
+
+getjsonprequest2(){
+const url = "https://archive.org/index.php?output=json&callback=archive";
+return this.http.jsonp(url, 'JSONP_CALLBACK');
+}
+
+fetchdata() {
+this.getjsonprequest().subscribe(res => {
+console.log(res, 'r');
+})
+}

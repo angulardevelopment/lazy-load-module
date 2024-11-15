@@ -67,3 +67,42 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 
+export const dashboardRoutes: Routes = [
+
+    {
+  
+      path: 'dashboard',
+  
+      component: LayoutComponent,
+  
+      canActivate: [AuthGuard],
+  
+      children: [
+  
+        { path: '', redirectTo: 'home', pathMatch: 'full' },
+  
+        { path: 'home', component: HomeComponent},
+  
+        {
+  
+          path: 'admin', component: AdminComponent,
+  
+          data: {role: 'Admin'},
+  
+          canActivate: [RoleGuard]
+  
+        }
+  
+      ]
+  
+    }
+  
+  ];
+  
+    providers: [
+  
+      AuthGuard,
+  
+      RoleGuard
+  
+    ],
