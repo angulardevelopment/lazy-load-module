@@ -18,7 +18,8 @@ import { HeaderComponent } from './header/header.component';
   declarations: [
     AppComponent,
     PageNotFoundComponent,
-    ArtistComponent, ArtistalbumComponent,HeaderComponent , HomeComponent, SearchComponent, TracklistComponent
+    ArtistComponent, ArtistalbumComponent,HeaderComponent , 
+    HomeComponent, SearchComponent, TracklistComponent
   ],
   imports: [
     AppRoutingModule,
