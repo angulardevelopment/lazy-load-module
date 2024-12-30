@@ -27,7 +27,11 @@ import { HeaderComponent } from './header/header.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+  //       AuthGuard,
+
+  //     RoleGuard
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
