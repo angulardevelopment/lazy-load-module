@@ -26,20 +26,20 @@ export class Resolver implements Resolve<string> {
   }
 }
 // ResolveFn   loaded from the resolver.
-export const routeResolverResolver: Resolve<boolean> = async (route) => {
+// export const routeResolverResolver: Resolve<boolean> = async (route) => {
 
-  const todoId = route.paramMap.get('id');
+//   const todoId = route.paramMap.get('id');
 
-  if (!todoId) {
-    throw new Error('Todo ID is missing in the route!');
-  }
+//   if (!todoId) {
+//     throw new Error('Todo ID is missing in the route!');
+//   }
 
-  // Fetch the todo from the API
-  const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${todoId}`);
+//   // Fetch the todo from the API
+//   const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${todoId}`);
 
-  if (!response.ok) {
-    throw new Error('Failed to fetch the todo');
-  }
+//   if (!response.ok) {
+//     throw new Error('Failed to fetch the todo');
+//   }
 
-  return await response.json();
-};
+//   return await response.json();
+// };

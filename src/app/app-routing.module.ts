@@ -47,7 +47,7 @@ const routes: Routes = [
       { path: "albums", component: ArtistalbumComponent }
     ]
   },
-  { path: 'movie', loadChildren: () => import('./movie/movie.module').then(m => m.MovieModule) },
+  { path: 'movie', loadChildren: () => import('./movie/movie.module').then(m => m.MovieModule), data: { preload: true } },
   // Below is the previous angular versions approach-
 
 // { path:'lazyload', loadChildren : './temperature/weather/weather.module#WeatherModule' },
@@ -94,7 +94,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes,
-    //  {preloadingStrategy : PreloadAllModules }
+     {preloadingStrategy : PreloadAllModules }
   )],
   exports: [RouterModule]
 })

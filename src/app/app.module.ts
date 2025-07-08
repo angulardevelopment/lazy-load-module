@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PageNotFoundComponent } from './hello/hello.component';
 import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
 
 import { TracklistComponent } from "./tracklist/tracklist.component";
 import { ArtistalbumComponent } from "./artistalbum/artistalbum.component";
@@ -25,7 +25,8 @@ import { HeaderComponent } from './header/header.component';
     AppRoutingModule,
     BrowserModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [
   //       AuthGuard,
@@ -34,4 +35,8 @@ import { HeaderComponent } from './header/header.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor() {
+    console.log('AppModule loaded');
+  }
+ }

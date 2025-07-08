@@ -14,4 +14,8 @@ import { MovieComponent } from './movie.component';
     MovieRoutingModule
   ]
 })
-export class MovieModule { }
+export class MovieModule { 
+  constructor() {
+    console.log('MovieModule loaded');
+  }
+}

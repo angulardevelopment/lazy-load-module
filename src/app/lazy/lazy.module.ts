@@ -14,4 +14,8 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([{ path: '', component: LazyComponent }])
   ]
 })
-export class LazyModule { }
+export class LazyModule { 
+  constructor() {
+    console.log('LazyModule loaded');
+  }
+}
