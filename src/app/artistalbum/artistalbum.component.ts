@@ -4,7 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-artistalbum',
   templateUrl: './artistalbum.component.html',
-  styleUrls: ['./artistalbum.component.css']
+  styleUrls: ['./artistalbum.component.css'],
+  standalone: false
 })
 export class ArtistalbumComponent {
 

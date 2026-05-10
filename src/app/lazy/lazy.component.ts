@@ -4,7 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-lazy',
   templateUrl: './lazy.component.html',
-  styleUrls: ['./lazy.component.scss']
+  styleUrls: ['./lazy.component.scss'],
+  standalone: false
 })
 export class LazyComponent implements OnInit {
 

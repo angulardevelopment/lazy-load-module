@@ -4,7 +4,8 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-tracklist',
   templateUrl: './tracklist.component.html',
-  styleUrls: ['./tracklist.component.css']
+  styleUrls: ['./tracklist.component.css'],
+  standalone: false
 })
 export class TracklistComponent {
 
