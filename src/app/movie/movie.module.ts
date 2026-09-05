@@ -6,13 +6,11 @@ import { MovieComponent } from './movie.component';
 
 
 @NgModule({
-  declarations: [
-    MovieComponent
-  ],
-  imports: [
-    CommonModule,
-    MovieRoutingModule
-  ]
+    imports: [
+        CommonModule,
+        MovieRoutingModule,
+        MovieComponent
+    ]
 })
 export class MovieModule { 
   constructor() {

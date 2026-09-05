@@ -2,10 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 @Component({
-  selector: 'app-artistalbum',
-  templateUrl: './artistalbum.component.html',
-  styleUrls: ['./artistalbum.component.css'],
-  standalone: false
+    selector: 'app-artistalbum',
+    templateUrl: './artistalbum.component.html',
+    styleUrls: ['./artistalbum.component.css']
 })
 export class ArtistalbumComponent {
 

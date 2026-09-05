@@ -6,13 +6,12 @@ import { RouterModule } from '@angular/router';
 
 
 @NgModule({
-  declarations: [LazyComponent],
-  exports: [LazyComponent],
-
-  imports: [
-    CommonModule,
-    RouterModule.forChild([{ path: '', component: LazyComponent }])
-  ]
+    exports: [LazyComponent],
+    imports: [
+        CommonModule,
+        RouterModule.forChild([{ path: '', component: LazyComponent }]),
+        LazyComponent
+    ]
 })
 export class LazyModule { 
   constructor() {

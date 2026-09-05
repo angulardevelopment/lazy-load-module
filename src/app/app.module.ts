@@ -15,25 +15,22 @@ import { ArtistComponent } from "./artist/artist.component";
 import { HeaderComponent } from './header/header.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    PageNotFoundComponent,
-    ArtistComponent, ArtistalbumComponent,HeaderComponent , 
-    HomeComponent, SearchComponent, TracklistComponent
-  ],
-  imports: [
-    AppRoutingModule,
-    BrowserModule,
-    FormsModule,
-    HttpClientModule,
-    HttpClientJsonpModule
-  ],
-  providers: [
-  //       AuthGuard,
-
-  //     RoleGuard
-  ],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        AppRoutingModule,
+        BrowserModule,
+        FormsModule,
+        HttpClientModule,
+        HttpClientJsonpModule,
+        PageNotFoundComponent,
+        ArtistComponent, ArtistalbumComponent, HeaderComponent,
+        HomeComponent, SearchComponent, TracklistComponent
+    ],
+    providers: [
+    //       AuthGuard,
+    //     RoleGuard
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
   constructor() {

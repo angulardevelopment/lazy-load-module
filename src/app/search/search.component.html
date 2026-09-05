@@ -7,15 +7,19 @@
   </button>
 </form>
 
-<hr /> 
+<hr />
 
 <div class="text-center">
-  <p class="lead" *ngIf="loading">Loading...</p>
+  @if (loading) {
+    <p class="lead">Loading...</p>
+  }
 </div>
 
 <div class="list-group">
-  <a [routerLink]="['/artist', track.artistId]" class="list-group-item list-group-item-action" *ngFor="let track of results">
-    <img src="{{track.thumbnail}}"> {{ track.name }}
-    <span class="text-muted">by</span> {{ track.artist }}
-  </a>
+  @for (track of results; track track) {
+    <a [routerLink]="['/artist', track.artistId]" class="list-group-item list-group-item-action">
+      <img src="{{track.thumbnail}}"> {{ track.name }}
+      <span class="text-muted">by</span> {{ track.artist }}
+    </a>
+  }
 </div>

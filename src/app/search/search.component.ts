@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute,Router} from '@angular/router';
+import { ActivatedRoute, Router, RouterLink } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css'],
-  standalone: false
+    selector: 'app-search',
+    templateUrl: './search.component.html',
+    styleUrls: ['./search.component.css'],
+    imports: [FormsModule, RouterLink]
 })
 export class SearchComponent {
 

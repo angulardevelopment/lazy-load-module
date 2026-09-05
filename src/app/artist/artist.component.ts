@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLinkActive, RouterLink, RouterOutlet } from '@angular/router';
 @Component({
-  selector: 'app-artist',
-  templateUrl: './artist.component.html',
-  styleUrls: ['./artist.component.css'],
-  standalone: false
+    selector: 'app-artist',
+    templateUrl: './artist.component.html',
+    styleUrls: ['./artist.component.css'],
+    imports: [RouterLinkActive, RouterLink, RouterOutlet]
 })
 export class ArtistComponent implements OnInit {
 

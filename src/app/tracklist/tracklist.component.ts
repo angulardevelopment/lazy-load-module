@@ -2,10 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ActivatedRoute } from '@angular/router';
 @Component({
-  selector: 'app-tracklist',
-  templateUrl: './tracklist.component.html',
-  styleUrls: ['./tracklist.component.css'],
-  standalone: false
+    selector: 'app-tracklist',
+    templateUrl: './tracklist.component.html',
+    styleUrls: ['./tracklist.component.css']
 })
 export class TracklistComponent {
 
